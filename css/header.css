@@ -19,3 +19,14 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+}
