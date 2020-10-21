@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="skeleton/normalize.css">
     <link rel="stylesheet" href="skeleton/skeleton.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" type="application/javascript"></script>
+    <script type="application/javascript">
+        particlesJS.load('particles-js', 'js/particles.json', function() {
+            console.log('Particles funcionou')
+        })
+    </script>
 </head>
 
 <body>
     <header id="header" class="container header">
+        <div id="particles-js"></div>
         <div id="social" class="row">
             <ul class="six columns links">
                 <li>
