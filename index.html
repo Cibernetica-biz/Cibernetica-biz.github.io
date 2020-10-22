@@ -11,23 +11,27 @@
     <link rel="stylesheet" href="skeleton/normalize.css">
     <link rel="stylesheet" href="skeleton/skeleton.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" type="application/javascript"></script>
+    <script type="application/javascript">
+        particlesJS.load('header', 'js/particles.json')
+    </script>
 </head>
 
 <body>
-    <header class="container header">
-        <div class="row">
+    <header id="header" class="container header">
+        <div id="social" class="row">
             <ul class="six columns links">
                 <li>
-                    <a target="_blank" rel="nofollow" href="https://facebook.com">Facebook</a>
+                    <a target="_blank" rel="noopener" href="https://facebook.com">Facebook</a>
                 </li>
                 <li>
-                    <a target="_blank" rel="nofollow" href="https://twitter.com">Twitter</a>
+                    <a target="_blank" rel="noopener" href="https://twitter.com">Twitter</a>
                 </li>
                 <li>
-                    <a target="_blank" rel="nofollow" href="https://instagram.com/">Instagram</a>
+                    <a target="_blank" rel="noopener" href="https://instagram.com/">Instagram</a>
                 </li>
                 <li>
-                    <a target="_blank" rel="nofollow" href="https://linkedin.com/">Linkedin</a>
+                    <a target="_blank" rel="noopener" href="https://linkedin.com/">Linkedin</a>
                 </li>
             </ul>
             <div class="six columns text-right">
@@ -37,22 +41,29 @@
                 </span>
             </div>
         </div>
-        <nav class="row">
-            <ul class="eleven columns links">
+        <div id="logo" class="row glitch">
+            <figure class="center twelve columns">
+                <object data="img/logo.svg" type="image/svg+xml">
+                    <img src="img/logo.png" alt="Logo da Cibernetica">
+                </object>
+            </figure>
+        </div>
+        <nav id="menu" class="row interference">
+            <ul class="twelve columns links center menu">
                 <li>
-                    <a href="#about">Sobre</a>
+                    <a href="#about" rel="noopener">Sobre</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfólio</a>
+                    <a href="#portfolio" rel="noopener">Portfólio</a>
                 </li>
                 <li>
-                    <a href="#home">Início</a>
+                    <a href="#contact" rel="noopener">Contato</a>
                 </li>
                 <li>
-                    <a href="#contact">Contato</a>
+                    <a href="#services" rel="noopener">Serviços</a>
                 </li>
                 <li>
-                    <a href="#team">Equipe</a>
+                    <a href="#solutions" rel="noopener">Soluções</a>
                 </li>
             </ul>
         </nav>
