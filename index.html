@@ -16,18 +16,37 @@
     <header id="header" class="container header">
         <div id="background"></div>
         <div id="social" class="row">
-            <ul class="six columns links">
+            <ul class="six columns links link-icon">
                 <li>
-                    <a target="_blank" rel="noopener" href="https://facebook.com">Facebook</a>
+                    <a target="_blank" rel="noopener" href="https://facebook.com">
+                        <span class="hide">Facebook</span>
+                        <span>
+                            <img src="data:image/png;base64,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"/></span>
+                    </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener" href="https://twitter.com">Twitter</a>
+                    <a target="_blank" rel="noopener" href="https://twitter.com">
+                        <span class="hide">Twitter</span>
+                        <span>
+                            <img src="https://img.icons8.com/nolan/64/twitter.png"/>
+                        </span>
+                    </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener" href="https://instagram.com/">Instagram</a>
+                    <a target="_blank" rel="noopener" href="https://instagram.com/">
+                        <span class="hide">Instagram</span>
+                        <span>
+                            <img src="https://img.icons8.com/nolan/64/instagram-new.png"/>
+                        </span>
+                    </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener" href="https://linkedin.com/">Linkedin</a>
+                    <a target="_blank" rel="noopener" href="https://linkedin.com/">
+                        <span class="hide">Linkedin</span>
+                        <span>
+                            <img src="https://img.icons8.com/nolan/64/linkedin.png"/>
+                        </span>
+                    </a>
                 </li>
             </ul>
             <div class="six columns text-right">
