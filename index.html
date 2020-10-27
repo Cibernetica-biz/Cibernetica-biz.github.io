@@ -9,13 +9,16 @@
     <meta name="keywords" content="sites, sistemas, aplicativos, soluções, android, ios">
     <meta name="robots" content="noindex">
     <meta name="theme-color" content="#181042">
-    <link rel="stylesheet" href="skeleton/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <header id="header" class="container header">
         <div id="background"></div>
+
         <div id="social" class="row">
             <ul class="six columns links link-icon">
                 <li>
@@ -57,7 +60,8 @@
             </ul>
             <div class="six columns telephone">
                 <span>
-                    <img alt="Telephone link" src="data:image/png;base64,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" />
+                    <img alt="Telephone link"
+                        src="data:image/png;base64,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" />
                 </span>
                 <span class="tel-title">Telefone de contato</span>
                 <ul class="tel">
@@ -70,13 +74,15 @@
                 </ul>
             </div>
         </div>
+
         <div id="logo" class="row glow">
             <figure class="center glitch twelve columns">
-                <object data="img/logo.svg" height="250,9" width="211,9" type="image/svg+xml">
-                    <img src="img/logo.png" height="250,9" width="211,9" alt="Logo da Cibernetica">
+                <object data="images/logo.svg" height="250,9" width="211,9" type="image/svg+xml">
+                    <img src="images/logo.png" height="250,9" width="211,9" alt="Logo da Cibernetica">
                 </object>
             </figure>
         </div>
+
         <nav id="menu" class="row interference">
             <ul class="twelve columns links center menu">
                 <li>
@@ -104,8 +110,14 @@
                 dolores nostrum vel laboriosam.</p>
         </section>
 
-        <section id="services">
-            <p>Serviços</p>
+        <section id="about" class="u-full-width bg-white">
+            <p class="section-tile">Cibernética</p>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ex. Necessitatibus qui repellat rerum,
+                dolores nostrum vel laboriosam.</h1>
+        </section>
+
+        <section id="services" class="u-full-width bg-black">
+            <p class="section-tile">Serviços</p>
             <ul>
                 <li>Sites</li>
                 <li>Sistemas</li>
@@ -113,8 +125,8 @@
             </ul>
         </section>
 
-        <section id="portfolio">
-            <p>Portfólio</p>
+        <section id="portfolio" class="bg-white">
+            <p class="section-tile">Portfólio</p>
             <ul>
                 <li>Trabalho 01</li>
                 <li>Trabalho 02</li>
@@ -122,23 +134,24 @@
             </ul>
         </section>
 
-        <section id="solutions">
-            <p>Soluções</p>
+        <section id="solutions" class="bg-black">
+            <p class="section-tile">Soluções</p>
             <ul>
                 <li>Solução 01</li>
                 <li>Solução 02</li>
                 <li>Solução 03</li>
             </ul>
         </section>
-        
-        <section id="contact">
-            <p>Fale Conosco</p>
+
+        <section id="contact" class="bg-white"">
+        <p class=" section-tile">Fale Conosco</p>
             <ul>
                 <li>contato@cibernetica.biz</li>
             </ul>
         </section>
     </main>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <link href=" https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="skeleton/normalize.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
