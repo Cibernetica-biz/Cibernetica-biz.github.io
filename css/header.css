@@ -49,6 +49,10 @@ body {
 
 }
 
+.telephone .tel a:hover {
+	text-shadow: 2px 2px#e72dda;
+}
+
 .hide {
 	clip-path: inset(100%);
 	clip: rect(1px, 1px, 1px, 1px);
