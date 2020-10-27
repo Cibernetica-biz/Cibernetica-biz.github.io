@@ -6,19 +6,79 @@
     animation: interference 4s infinite;
 }
 
+.telephone {
+	color: white;
+	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: end;
+}
+
+body {
+	background-color: #181042;
+	position: relative;
+}
+
+.link-icon a{
+	text-decoration: none;
+}
+
+.telephone .tel-title {
+	width: 100px;
+	text-align: left;
+	margin: 15px;
+}
+
+.tel li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+.telephone .tel {
+	display: block;
+	margin: 0px;
+}
+
+.telephone .tel a {
+	font-size: 20px;
+	text-decoration: none;
+    color: #83dbee;
+
+}
+
+.telephone .tel a:hover {
+	text-shadow: 2px 2px#e72dda;
+}
+
+.hide {
+	clip-path: inset(100%);
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+#background {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+
 .header {
     padding: 15px;
     background-color: #181042;
     position: relative;
     overflow: hidden;
-    color: white;
-}
-
-.header canvas {
-    position: absolute;
-    z-index: 0;
-    top: 0px;
-    left: 0px;
+	color: white;
+	z-index: 0;
 }
 
 #social, #logo, #menu {
@@ -50,7 +110,10 @@
 .menu a {
     text-decoration: none;
     color: #83dbee;
-    font-family: 'Exo', sans-serif;
+	font-family: 'Exo', sans-serif;
+	font-size: 25px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .menu a:hover {
