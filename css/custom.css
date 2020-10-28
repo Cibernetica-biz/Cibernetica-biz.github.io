@@ -1,15 +1,15 @@
 section {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 
-.bg-white {
-    background-color: #fff;
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
-.bg-black {
-    background-color: #000;
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .section-tile {
