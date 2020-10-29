@@ -3,3 +3,11 @@ main {
     position: absolute;
     width: 100%;
 }
+
+#services {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-family: 'Exo', sans-serif;
+}
