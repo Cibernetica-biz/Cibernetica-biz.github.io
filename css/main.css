@@ -5,14 +5,15 @@ main {
 }
 
 #services {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
 }
 
 h2 {
-	font-family: 'Exo', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
-h1:hover>.headerlink, h2:hover>.headerlink, h3:hover>.headerlink, h4:hover>.headerlink, h5:hover>.headerlink, h6:hover>.headerlink, dl:hover>.headerlink, dt:hover>.headerlink {
+li:hover>h3>.headerlink, h1:hover>.headerlink, h2:hover>.headerlink, h3:hover>.headerlink, h4:hover>.headerlink, h5:hover>.headerlink, h6:hover>.headerlink, dl:hover>.headerlink, dt:hover>.headerlink {
     opacity: 1;
 }
 
@@ -33,3 +34,36 @@ h1:hover>.headerlink, h2:hover>.headerlink, h3:hover>.headerlink, h4:hover>.head
     color: #83dbee;
     text-shadow: 2px 2px#e72dda;
 }
+
+.content-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-list p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content-list li {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* For mobile phones: */
+    .content-list li {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For mobile phones: */
+    .content-list li {
+        width: 30%;
+    }
+  }
