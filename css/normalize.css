@@ -10,6 +10,8 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  width: 100vw;
+
 }
 
 /**
@@ -18,8 +20,13 @@ html {
 
 body {
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
+main {
+  width: 100vw;
 
+}
 /* HTML5 display definitions
    ========================================================================== */
 
